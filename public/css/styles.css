@@ -1,0 +1,43 @@
+:root{
+    --bg: #0b1020;
+    --card: #f6ecec;
+    --accent: #4f46e5;
+    --accent-2:#22c55e;
+    --text:#e5e7eb;
+    --muted:#9ca3af;
+}
+html, body { height: 100%; background: var(--bg); color: var(--text); }
+a { color: var(--accent); }
+.navbar { background: linear-gradient(90deg,#0b1020,#111633); }
+.card {
+    background: white;;
+    border: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+}
+.form-control, .form-select {
+    background: white; color: black;
+    border: 1px solid black;
+}
+.form-control:focus { border-color: var(--accent); box-shadow: 0 0 0 .2rem rgba(79,70,229,.25); }
+.btn-primary { background: var(--accent); border: none; }
+.btn-success { background: var(--accent-2); border: none; }
+.table thead th { border-bottom-color: rgba(255,255,255,0.08); }
+.table td, .table th { border-color: rgba(255,255,255,0.06);}
+.badge-soft { background: rgba(255,255,255,0.1); color:#e5e7eb; }
+.footer {
+    color: var(--muted); font-size: .9rem; text-align:center; padding: 24px 0; margin-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+.max-w-480 { max-width: 480px; }
+.hero {
+    min-height: calc(100vh - 64px);
+    display:flex; align-items:center; justify-content:center; padding: 24px 16px;
+}
+.btn-outline-light {
+    --bs-btn-border-color: green;
+}
+.modal-content{
+    color: black;
+    background: white;
+}
